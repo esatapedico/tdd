@@ -1,7 +1,6 @@
 <?php
 namespace Vox\Treinamento\Tdd;
 
-use Doctrine\Instantiator\Exception\InvalidArgumentException;
 class Calculator
 {
     /**
@@ -73,7 +72,7 @@ class Calculator
 	protected function validaValoresNumericos($valor)
 	{
 	   if (!is_numeric($valor)) {
-	       throw new InvalidArgumentException("Apenas números, por favor.");
+	       throw new \InvalidArgumentException("Apenas números, por favor.");
 	   }    
 	}
 }
